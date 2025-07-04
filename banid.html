@@ -1,82 +1,871 @@
-🛡️ BAN ID GAMING SERVER BYPASS 3.0 🛡️
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban ID Gaming | Free Fire Mods & Safety Guides</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Orbitron:wght@700&family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+        
+        :root {
+            --primary: #00ff9d;
+            --secondary: #00b8ff;
+            --dark: #0a0a12;
+            --darker: #050508;
+            --matrix: #00ff41;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Share Tech Mono', monospace;
+            background-color: var(--dark);
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 75% 30%, rgba(0, 255, 157, 0.05) 0%, transparent 25%),
+                radial-gradient(circle at 25% 70%, rgba(0, 184, 255, 0.05) 0%, transparent 25%),
+                linear-gradient(to bottom, rgba(10, 10, 18, 0.9), rgba(5, 5, 8, 0.95));
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://i.imgur.com/JV5Omz5.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -2;
+            opacity: 0.15;
+        }
+        
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    rgba(0, 255, 157, 0.03),
+                    rgba(0, 255, 157, 0.03) 1px,
+                    transparent 1px,
+                    transparent 3px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    rgba(0, 184, 255, 0.03),
+                    rgba(0, 184, 255, 0.03) 1px,
+                    transparent 1px,
+                    transparent 3px
+                );
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        .cyber-glitch {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(0, 255, 157, 0.03), transparent 3px),
+                linear-gradient(90deg, rgba(0, 184, 255, 0.03), transparent 3px);
+            background-size: 4px 4px;
+            z-index: -1;
+            opacity: 0.5;
+            animation: glitch 5s infinite alternate;
+        }
+        
+        header {
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            box-shadow: 0 0 30px rgba(0, 255, 157, 0.1);
+        }
+        
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            color: var(--primary);
+            text-shadow: 0 0 15px rgba(0, 255, 157, 0.7);
+            margin-bottom: 10px;
+            animation: glow 1.5s infinite alternate;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .logo::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: scanline 3s infinite;
+        }
+        
+        .tagline {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1rem;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0, 184, 255, 0.5);
+            letter-spacing: 1px;
+        }
+        
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(10, 20, 30, 0.7);
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        .social-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: 0.5s;
+        }
+        
+        .social-btn:hover::before {
+            left: 100%;
+        }
+        
+        .youtube {
+            border-color: #ff0000;
+            color: #ff9e9e;
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.15), rgba(20, 10, 10, 0.7));
+        }
+        
+        .telegram {
+            border-color: #0088cc;
+            color: #9edcff;
+            background: linear-gradient(135deg, rgba(0, 136, 204, 0.15), rgba(10, 20, 30, 0.7));
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .guide-section {
+            background: rgba(15, 15, 25, 0.7);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 3px solid var(--primary);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .guide-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+        }
+        
+        h1, h2 {
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            padding-top: 20px;
+            font-size: 2.5rem;
+            position: relative;
+        }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+        
+        h2 {
+            border-bottom: 1px solid rgba(0, 255, 157, 0.3);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: var(--secondary);
+            margin-top: 25px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.3rem;
+        }
+        
+        h4 {
+            font-family: 'Share Tech Mono', monospace;
+            margin-bottom: 10px;
+        }
+        
+        .language-tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 255, 157, 0.3);
+            justify-content: center;
+        }
+        
+        .language-tab {
+            padding: 10px 20px;
+            background: rgba(15, 15, 25, 0.7);
+            cursor: pointer;
+            margin-right: 5px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            font-family: 'Share Tech Mono', monospace;
+            color: #ccc;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .language-tab::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        .language-tab.active {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .language-tab.active::before {
+            transform: scaleX(1);
+        }
+        
+        .language-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .language-content.active {
+            display: block;
+        }
+        
+        .warning-box {
+            background: rgba(255, 0, 0, 0.1);
+            border-left: 3px solid #ff3e3e;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .warning-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255, 0, 0, 0.05), transparent);
+        }
+        
+        .note-box {
+            background: rgba(0, 184, 255, 0.1);
+            border-left: 3px solid var(--secondary);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-size: 0.8rem;
+        }
+        
+        .allowed {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        .prohibited {
+            color: #ff5555;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(5, 5, 8, 0.8);
+            font-size: 0.8rem;
+            color: #777;
+            border-top: 1px solid rgba(0, 255, 157, 0.1);
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(0, 255, 157, 0.7);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(0, 255, 157, 0.9), 0 0 30px rgba(0, 255, 157, 0.5);
+            }
+        }
+        
+        @keyframes scanline {
+            0% { transform: scaleX(0); }
+            50% { transform: scaleX(1); }
+            100% { transform: scaleX(0); transform-origin: right; }
+        }
+        
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            .tagline {
+                font-size: 0.8rem;
+            }
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            .social-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cyber-glitch"></div>
+    
+    <header>
+        <div class="logo">BAN ID GAMING</div>
+        <div class="tagline">FREE FIRE MODS & SAFETY GUIDES</div>
+        
+        <div class="social-links">
+            <a href="https://www.youtube.com/@zolamff" class="social-btn youtube" target="_blank">
+                <i class="fab fa-youtube icon"></i>
+                <span>Zolam FF</span>
+            </a>
+            
+            <a href="https://www.youtube.com/@banidgaming7" class="social-btn youtube" target="_blank">
+                <i class="fab fa-youtube icon"></i>
+                <span>Ban ID Gaming</span>
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <h1>SAFE USAGE GUIDES</h1>
+        
+        <div class="language-tabs">
+            <div class="language-tab active" onclick="showLanguage('english')">English</div>
+            <div class="language-tab" onclick="showLanguage('bangla')">Bangla</div>
+            <div class="language-tab" onclick="showLanguage('hindi')">Hindi</div>
+        </div>
+        
+        <!-- English Guide -->
+        <div id="english" class="language-content active">
+            <div class="guide-section">
+                <h2>📌 ImGui Mod Menu Usage Guide</h2>
+                <p>Follow these steps carefully to avoid bans and trigger anti-cheat systems.</p>
+                
+                <h3>🔧 Setup Requirements:</h3>
+                <ul>
+                    <li>DNS Bypass + Server Bypass must be active before launching the game.</li>
+                    <li><strong>Offline Protection:</strong>
+                        <ul>
+                            <li>Disable Free Fire via App Manager when not in use.</li>
+                            <li>Clear cache after every session.</li>
+                            <li>Disable ImGui ModMenu from the module section when not playing.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🎮 In-Game Usage Rules:</h3>
+                <h4>🚫 When to Enable Hacks:</h4>
+                
+                <p class="allowed">✅ CS (Clash Squad) Match:</p>
+                <ul>
+                    <li>Enable hacks ONLY during the Shope Timer</li>
+                    <li>Do NOT enable mid-match.</li>
+                </ul>
+                
+                <p class="allowed">✅ BR (Battle Royale) Match:</p>
+                <ul>
+                    <li>Enable hacks ONLY inside the plane (before jumping).</li>
+                    <li>Do NOT enable after landing.</li>
+                </ul>
+                
+                <h4 class="prohibited">❌ Strict Prohibitions:</h4>
+                <ul>
+                    <li>Never enable hacks during an ongoing match.</li>
+                    <li>After finishing a match, TURN OFF all hacks before restarting.</li>
+                    <li>DO NOT return to the lobby—restart the match directly.</li>
+                    <li>If playing in a squad, TELL YOUR TEAMMATES NOT TO RETURN TO LOBBY (or risk blacklist).</li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🛡️ Anti-Cheat Avoidance Rules:</h3>
+                <p>To prevent detection, follow these limits:</p>
+                <ul>
+                    <li>🔹 BR Match: Do not exceed 15 kills.</li>
+                    <li>🔹 CS Match: Do not exceed 11 kills.</li>
+                    <li>🔹 No Sky Kills (Do not kill enemies while in the air).</li>
+                    <li>🔹 No Rapid Kills: Max 4 kills per scope time (Auto-aim locks onto next enemy after a down).</li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🔄 Re-Entry Protocol:</h3>
+                <ul>
+                    <li>First Launch: Open Free Fire WITHOUT hacks for one match.</li>
+                    <li>Second Launch: Activate Server Bypass + DNS Bypass before enabling the mod menu.</li>
+                    <li>Never open Free Fire with the mod menu active without bypass protection.</li>
+                </ul>
+            </div>
 
-🚀 Now with 4 Different Servers!
-Choose the one that works best for you.
+            <!-- GameGuardian Guide -->
+            <div class="guide-section">
+                <h2>✅ How to Use GameGuardian (Safe Method)</h2>
+                <p>🔥 With Server Bypass + DNS Bypass</p>
+                <ol>
+                    <li>Start the match using Server Bypass 1</li>
+                    <li>Minimize the game</li>
+                    <li>Inject the script using GameGuardian</li>
+                    <li>Play the game as normal</li>
+                    <li>After the match ends, DO NOT go back to the lobby</li>
+                    <li>Force close the game completely</li>
+                    <li>Clear cache</li>
+                    <li>Reopen the game</li>
+                </ol>
+                <p>🔁 Repeat these steps every time you play</p>
+                <p>⚠️ Always use Server Bypass + DNS Bypass for safety</p>
+            </div>
 
-🔹 Recommended:
-If you're using Script, use Server 1.
-Server 3 & 4 are made for Mod Menu – not 100% safe but can help you play more matches.
-Try all and see which one suits your device and gameplay.
-✅ How to Use:
+            <!-- Server Bypass 3.0 Guide -->
+            <div class="guide-section">
+                <h2>🛡️ BAN ID GAMING SERVER BYPASS 3.0 🛡️</h2>
+                <p>🚀 Now with 4 Different Servers!</p>
+                <p>Choose the one that works best for you.</p>
+                
+                <h3>🔹 Recommended:</h3>
+                <ul>
+                    <li>If you're using Script, use Server 1.</li>
+                    <li>Server 3 & 4 are made for Mod Menu – not 100% safe but can help you play more matches.</li>
+                    <li>Try all and see which one suits your device and gameplay.</li>
+                </ul>
+                
+                <h3>✅ How to Use:</h3>
+                <ol>
+                    <li>Activate Server Bypass</li>
+                    <li>Disable Google App from App Management</li>
+                    <li>Play your matches</li>
+                    <li>After finishing, Re-enable Google App</li>
+                </ol>
+                
+                <h3>📛 App Cache & Clear Data Option</h3>
+                <p>It will delete data of:</p>
+                <ul>
+                    <li>Free Fire</li>
+                    <li>Free Fire MAX</li>
+                    <li>Play Store</li>
+                    <li>Play Services</li>
+                </ul>
+                <p>👉 This helps avoid script-based blacklist.</p>
+                <p class="warning">⚠️ Be careful: If you don't want to clear data, don't use this option.</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3>⚠️ Final Warning:</h3>
+                <p>Failure to follow these steps may result in a ban OR BLACKLIST.</p>
+                <p>Stay low, play smart, and avoid unnecessary risks! 🔥</p>
+            </div>
+        </div>
+        
+        <!-- Bangla Guide -->
+        <div id="bangla" class="language-content">
+            <div class="guide-section">
+                <h2>📌 ImGui Mod Menu ব্যবহারের গাইড</h2>
+                <p>সতর্কতার সাথে এই ধাপগুলি অনুসরণ করুন যাতে Ban বা Anti-Cheat সিস্টেম ট্রিগার না হয়।</p>
+                
+                <h3>🔧 সেটআপের প্রয়োজনীয়তা:</h3>
+                <ul>
+                    <li>গেম লঞ্চ করার আগে <strong>DNS Bypass + Server Bypass</strong> এক্টিভ থাকতে হবে।</li>
+                    <li><strong>অফলাইন প্রোটেকশন:</strong>
+                        <ul>
+                            <li>গেম ব্যবহার না করলে <strong>App Manager</strong> দিয়ে Free Fire ডিসেবল করুন।</li>
+                            <li>প্রতিটি সেশনের পর <strong>ক্যাশে ক্লিয়ার</strong> করুন।</li>
+                            <li>খেলা না খেললে <strong>ImGui ModMenu</strong> মডিউল থেকে ডিসেবল করুন।</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🎮 গেমে ব্যবহারের নিয়ম:</h3>
+                <h4>🚫 কখন হ্যাকস চালু করবেন:</h4>
+                
+                <p class="allowed">✅ CS (Clash Squad) ম্যাচ:</p>
+                <ul>
+                    <li><strong>শুধুমাত্র Shope Timer চলাকালীন</strong> হ্যাকস চালু করুন।</li>
+                    <li>ম্যাচের মাঝে হ্যাকস চালু করবেন না।</li>
+                </ul>
+                
+                <p class="allowed">✅ BR (Battle Royale) ম্যাচ:</p>
+                <ul>
+                    <li><strong>প্লেনে থাকাকালীন (জাম্প দেওয়ার আগে)</strong> হ্যাকস চালু করুন।</li>
+                    <li>ল্যান্ড করার পর হ্যাকস চালু করবেন না।</li>
+                </ul>
+                
+                <h4 class="prohibited">❌ কঠোর নিষেধাজ্ঞা:</h4>
+                <ul>
+                    <li>কোনো ম্যাচ চলাকালীন হ্যাকস চালু করবেন না।</li>
+                    <li>ম্যাচ শেষ করে <strong>সব হ্যাকস বন্ধ করুন</strong> তারপর আবার ম্যাচ শুরু করুন।</li>
+                    <li><strong>লবিতে ফিরবেন না</strong>—সরাসরি নতুন ম্যাচ শুরু করুন।</li>
+                    <li>স্কোয়াডে খেললে, <strong>টিমমেটদের লবিতে ফিরতে নিষেধ করুন</strong> (নাহলে Blacklist হতে পারেন)।</li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🛡️ Anti-Cheat এড়ানোর নিয়ম:</h3>
+                <ul>
+                    <li>🔹 BR ম্যাচ: ১৫ kills-এর বেশি নয়।</li>
+                    <li>🔹 CS ম্যাচ: ১১ kills-এর বেশি নয়।</li>
+                    <li>🔹 Sky Kill নিষিদ্ধ (বাতাসে থাকা শত্রু মারবেন না)।</li>
+                    <li>🔹 দ্রুত Kill নিষিদ্ধ: এক Scope-তে সর্বোচ্চ ৪ kills (Auto-aim পরের শত্রুতে লক করবে)।</li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🔄 পুনরায় প্রবেশ প্রোটোকল:</h3>
+                <ul>
+                    <li><strong>প্রথম লঞ্চ:</strong> কোনো হ্যাক ছাড়া Free Fire ওপেন করুন।</li>
+                    <li><strong>দ্বিতীয় লঞ্চ:</strong> Server Bypass + DNS Bypass চালু করে তারপর Mod Menu চালু করুন।</li>
+                    <li><strong>Bypass প্রোটেকশন ছাড়া Mod Menu দিয়ে গেম খুলবেন না।</strong></li>
+                </ul>
+            </div>
 
-    Activate Server Bypass
+            <!-- GameGuardian Guide -->
+            <div class="guide-section">
+                <h2>✅ কিভাবে GameGuardian সেফভাবে ব্যবহার করবেন</h2>
+                <p>🔥 Server Bypass + DNS Bypass সহ</p>
+                <ol>
+                    <li>Server Bypass 1 দিয়ে ম্যাচ শুরু করুন</li>
+                    <li>গেম মিনিমাইজ করুন</li>
+                    <li>GameGuardian দিয়ে স্ক্রিপ্ট ইনজেক্ট করুন</li>
+                    <li>গেম খেলুন</li>
+                    <li>ম্যাচ শেষে লবিতে ব্যাক করবেন না</li>
+                    <li>গেম পুরোপুরি বন্ধ করে দিন (ফোর্স স্টপ)</li>
+                    <li>ক্যাশ ক্লিয়ার করুন</li>
+                    <li>গেমটি আবার চালু করুন</li>
+                </ol>
+                <p>🔁 প্রতি ম্যাচে এই ধাপগুলো অনুসরণ করুন</p>
+                <p>⚠️ সর্বদা Server Bypass ও DNS Bypass ব্যবহার করুন নিরাপত্তার জন্য</p>
+            </div>
 
-    Disable Google App from App Management
+            <!-- Server Bypass 3.0 Guide -->
+            <div class="guide-section">
+                <h2>🛡️ BAN ID SERVER BYPASS 3.0 🛡️</h2>
+                <p>এখন ৪টি আলাদা সার্ভার সহ</p>
+                <p>যেটা আপনার জন্য ভালো কাজ করে সেটা ব্যবহার করুন।</p>
+                
+                <h3>🔹 রিকমেন্ডেড:</h3>
+                <ul>
+                    <li>Script ইউজারদের জন্য Server 1 রিকমেন্ডেড।</li>
+                    <li>Server 3 & 4 শুধু Mod Menu ইউজারদের জন্য।</li>
+                    <li>১০০% সেফ না, তবে অনেক ম্যাচ খেলতে সাহায্য করবে।</li>
+                </ul>
+                
+                <h3>✅ ব্যবহার করার নিয়ম:</h3>
+                <ol>
+                    <li>প্রথমে Server Bypass চালু করুন</li>
+                    <li>Google App ডিসেবল করুন (App Management থেকে)</li>
+                    <li>গেম খেলুন</li>
+                    <li>খেলা শেষ হলে Google App আবার চালু করুন</li>
+                </ol>
+                
+                <h3>📛 App Cache & Clear Data অপশন</h3>
+                <p>নিচের অ্যাপগুলোর ডেটা মুছে ফেলবে:</p>
+                <ul>
+                    <li>FREE FIRE</li>
+                    <li>FF MAX</li>
+                    <li>Play Store</li>
+                    <li>Play Services</li>
+                </ul>
+                <p>❗Blacklist এ পড়া এড়াতে সাহায্য করে।</p>
+                <p class="warning">⚠️ ডেটা রাখতে চাইলে Clear Data অপশন ইউজ করবেন না।</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3>⚠ চূড়ান্ত সতর্কতা:</h3>
+                <p>এই নিয়ম না মানলে <strong>Ban বা Blacklist</strong> হতে পারেন!</p>
+                <p><strong>চুপচাপ খেলুন, স্মার্ট থাকুন, ঝুঁকি এড়িয়ে চলুন!</strong> 🔥</p>
+            </div>
+        </div>
+        
+        <!-- Hindi Guide -->
+        <div id="hindi" class="language-content">
+            <div class="guide-section">
+                <h2>📌 ImGui Mod Menu उपयोग गाइड</h2>
+                <p>बैन और Anti-Cheat सिस्टम से बचने के लिए इन चरणों का सावधानी से पालन करें।</p>
+                
+                <h3>🔧 सेटअप आवश्यकताएँ:</h3>
+                <ul>
+                    <li>गेम लॉन्च करने से पहले <strong>DNS Bypass + Server Bypass</strong> एक्टिव होना चाहिए।</li>
+                    <li><strong>ऑफलाइन सुरक्षा:</strong>
+                        <ul>
+                            <li>गेम का उपयोग न करने पर <strong>App Manager</strong> से Free Fire डिसेबल करें।</li>
+                            <li>हर सेशन के बाद <strong>कैशे क्लियर</strong> करें।</li>
+                            <li>न खेलने पर <strong>ImGui ModMenu</strong> को मॉड्यूल सेक्शन से डिसेबल करें।</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🎮 गेम में उपयोग के नियम:</h3>
+                <h4>🚫 हैक्स कब चालू करें:</h4>
+                
+                <p class="allowed">✅ CS (Clash Squad) मैच:</p>
+                <ul>
+                    <li><strong>केवल Shope Timer के दौरान</strong> हैक्स चालू करें।</li>
+                    <li>मैच के बीच में हैक्स चालू न करें।</li>
+                </ul>
+                
+                <p class="allowed">✅ BR (Battle Royale) मैच:</p>
+                <ul>
+                    <li><strong>प्लेन में (जंप करने से पहले)</strong> हैक्स चालू करें।</li>
+                    <li>लैंड करने के बाद हैक्स चालू न करें।</li>
+                </ul>
+                
+                <h4 class="prohibited">❌ सख्त मनाही:</h4>
+                <ul>
+                    <li>चल रहे मैच में हैक्स चालू न करें।</li>
+                    <li>मैच खत्म करने के बाद <strong>सभी हैक्स बंद करें</strong>, फिर नया मैच शुरू करें।</li>
+                    <li><strong>लॉबी में वापस न जाएँ</strong>—सीधे नया मैच शुरू करें।</li>
+                    <li>स्क्वाड में खेलते समय <strong>टीममेट्स को लॉबी वापस जाने से रोकें</strong> (वरना Blacklist हो सकते हैं)।</li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🛡️ Anti-Cheat बचने के नियम:</h3>
+                <ul>
+                    <li>🔹 BR मैच: 15 kills से अधिक नहीं।</li>
+                    <li>🔹 CS मैच: 11 kills से अधिक नहीं।</li>
+                    <li>🔹 Sky Kill मना है (हवा में दुश्मन को मारना मना है)।</li>
+                    <li>🔹 तेजी से Kill न करें: एक Scope में अधिकतम 4 kills (Auto-aim अगले दुश्मन पर लॉक करेगा)।</li>
+                </ul>
+            </div>
+            
+            <div class="guide-section">
+                <h3>🔄 पुनः प्रवेश प्रोटोकॉल:</h3>
+                <ul>
+                    <li><strong>पहली लॉन्च:</strong> बिना हैक के Free Fire खोलें।</li>
+                    <li><strong>दूसरी लॉन्च:</strong> Server Bypass + DNS Bypass चालू करके Mod Menu चालू करें।</li>
+                    <li><strong>Bypass प्रोटेक्शन के बिना Mod Menu से गेम न खोलें।</strong></li>
+                </ul>
+            </div>
 
-    Play your matches
+            <!-- GameGuardian Guide -->
+            <div class="guide-section">
+                <h2>✅ GameGuardian सुरक्षित तरीके से कैसे उपयोग करें</h2>
+                <p>🔥 Server Bypass + DNS Bypass के साथ</p>
+                <ol>
+                    <li>Server Bypass 1 से मैच शुरू करें</li>
+                    <li>गेम को मिनिमाइज़ करें</li>
+                    <li>GameGuardian से स्क्रिप्ट इंजेक्ट करें</li>
+                    <li>नॉर्मल गेम खेलें</li>
+                    <li>मैच खत्म होने के बाद लॉबी में वापस न जाएं</li>
+                    <li>गेम को पूरी तरह बंद कर दें (फोर्स स्टॉप)</li>
+                    <li>कैश क्लियर करें</li>
+                    <li>गेम फिर से खोलें</li>
+                </ol>
+                <p>🔁 हर बार गेम खेलने से पहले यह स्टेप्स फॉलो करें</p>
+                <p>⚠️ हमेशा Server Bypass और DNS Bypass का उपयोग करें सुरक्षा के लिए</p>
+            </div>
 
-    After finishing, Re-enable Google App
-
-📛 App Cache & Clear Data Option
-It will delete data of:
-• Free Fire
-• Free Fire MAX
-• Play Store
-• Play Services
-
-👉 This helps avoid script-based blacklist.
-⚠️ Be careful: If you don’t want to clear data, don’t use this option.
-🇧🇩 বাংলা:
-
-BAN ID SERVER BYPASS 3.0 এখন ৪টি আলাদা সার্ভার সহ
-যেটা আপনার জন্য ভালো কাজ করে সেটা ব্যবহার করুন।
-
-🔹 Script ইউজারদের জন্য Server 1 রিকমেন্ডেড।
-Server 3 & 4 শুধু Mod Menu ইউজারদের জন্য।
-১০০% সেফ না, তবে অনেক ম্যাচ খেলতে সাহায্য করবে।
-
-ব্যবহার করার নিয়ম:
-
-    প্রথমে Server Bypass চালু করুন
-
-    Google App ডিসেবল করুন (App Management থেকে)
-
-    গেম খেলুন
-
-    খেলা শেষ হলে Google App আবার চালু করুন
-
-⚠️ App Cache & Clear Data অপশন নিচের অ্যাপগুলোর ডেটা মুছে ফেলবে:
-• FREE FIRE
-• FF MAX
-• Play Store
-• Play Services
-
-❗Blacklist এ পড়া এড়াতে সাহায্য করে।
-ডেটা রাখতে চাইলে Clear Data অপশন ইউজ করবেন না।
-🇮🇳 हिंदी:
-
-BAN ID SERVER BYPASS 3.0 में अब 4 अलग-अलग सर्वर हैं
-जो आपके लिए सबसे अच्छा हो वही इस्तेमाल करें।
-
-🔹 Script यूज़र्स के लिए Server 1 सबसे अच्छा है।
-Server 3 और 4 सिर्फ Mod Menu यूज़र्स के लिए हैं।
-100% सेफ नहीं हैं, लेकिन ज़्यादा मैच खेलने में मदद कर सकते हैं।
-
-यूज़ करने का तरीका:
-
-    सबसे पहले Server Bypass एक्टिव करें
-
-    Google App को डिसेबल करें (App Management से)
-
-    गेम खेलें
-
-    गेम खत्म होने के बाद Google App फिर से ऑन करें
-
-⚠️ App Cache और Clear Data ऑप्शन इन ऐप्स का डेटा डिलीट करेगा:
-• FREE FIRE
-• FF MAX
-• Play Store
-• Play Services
-
-❗ Script ब्लैकलिस्ट से बचने में मदद करता है।
-अगर आप डेटा नहीं खोना चाहते, तो Clear Data का यूज़ न करें।
+            <!-- Server Bypass 3.0 Guide -->
+            <div class="guide-section">
+                <h2>🛡️ BAN ID SERVER BYPASS 3.0 🛡️</h2>
+                <p>अब 4 अलग-अलग सर्वर हैं</p>
+                <p>जो आपके लिए सबसे अच्छा हो वही इस्तेमाल करें।</p>
+                
+                <h3>🔹 रिकमेंडेड:</h3>
+                <ul>
+                    <li>Script यूज़र्स के लिए Server 1 सबसे अच्छा है।</li>
+                    <li>Server 3 और 4 सिर्फ Mod Menu यूज़र्स के लिए हैं।</li>
+                    <li>100% सेफ नहीं हैं, लेकिन ज़्यादा मैच खेलने में मदद कर सकते हैं।</li>
+                </ul>
+                
+                <h3>✅ यूज़ करने का तरीका:</h3>
+                <ol>
+                    <li>सबसे पहले Server Bypass एक्टिव करें</li>
+                    <li>Google App को डिसेबल करें (App Management से)</li>
+                    <li>गेम खेलें</li>
+                    <li>गेम खत्म होने के बाद Google App फिर से ऑन करें</li>
+                </ol>
+                
+                <h3>📛 App Cache और Clear Data ऑप्शन</h3>
+                <p>इन ऐप्स का डेटा डिलीट करेगा:</p>
+                <ul>
+                    <li>FREE FIRE</li>
+                    <li>FF MAX</li>
+                    <li>Play Store</li>
+                    <li>Play Services</li>
+                </ul>
+                <p>❗ Script ब्लैकलिस्ट से बचने में मदद करता है।</p>
+                <p class="warning">⚠️ अगर आप डेटा नहीं खोना चाहते, तो Clear Data का यूज़ न करें।</p>
+            </div>
+            
+            <div class="warning-box">
+                <h3>⚠ अंतिम चेतावनी:</h3>
+                <p>इन नियमों का पालन न करने पर <strong>Ban या Blacklist</strong> हो सकते हैं!</p>
+                <p><strong>चुपके रहें, समझदारी से खेलें, जोखिम से बचें!</strong> 🔥</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2023 Ban ID Gaming | Use at your own risk</p>
+        <p>Not affiliated with Garena or Free Fire</p>
+    </footer>
+    
+    <script>
+        function showLanguage(lang) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Deactivate all tabs
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Activate selected language
+            document.getElementById(lang).classList.add('active');
+            
+            // Activate selected tab
+            event.currentTarget.classList.add('active');
+        }
+        
+        // Add subtle glitch effect to header
+        const header = document.querySelector('header');
+        setInterval(() => {
+            if (Math.random() > 0.9) {
+                header.style.transform = `translate(${Math.random() * 4 - 2}px, ${Math.random() * 4 - 2}px)`;
+                setTimeout(() => {
+                    header.style.transform = 'translate(0, 0)';
+                }, 100);
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
